@@ -1,0 +1,34 @@
+1.create db
+
+	> use MyBlog
+
+2.create user collection
+
+	>db.createCollection("user")
+
+3.insert user document
+
+	>db.user.insert({
+	   _id: ObjectId(7df78ad8902c),
+	   title: 'MongoDB Overview', 
+	   description: 'MongoDB is no sql database',
+	   by: 'tutorials point',
+	   url: 'http://www.tutorialspoint.com',
+	   tags: ['mongodb', 'database', 'NoSQL'],
+	   likes: 100
+	})
+
+4.create post collection
+
+	>db.createCollection("post")
+
+5.inset post document
+	>db.post.insert({
+	   _id: ObjectId(7df78ad8902c),
+	   title: 'MongoDB Overview', 
+	   description: 'MongoDB is no sql database',
+	   by: 'tutorials point',
+	   url: 'http://www.tutorialspoint.com',
+	   tags: ['mongodb', 'database', 'NoSQL'],
+	   likes: 100
+	})
